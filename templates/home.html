@@ -26,7 +26,7 @@
     <h3>Template Number Filters</h3>
     <h4>Add 10- {{ nam4 | add:10 }}</h4>
     <h4>Divide 10- {{ nam4 | divisibleby:10 }}</h4>
-    <h4>Float Formet 2- {{ nam4 | floatformat:2 }}</h4>
+    <h4>Float Format 2- {{ nam4 | floatformat:2 }}</h4>
     <br>
 
     <h3>Template List Filters</h3>
@@ -91,9 +91,14 @@
             {% endfor %}
         </tbody>
     </table>
+    <br>
 
     {% comment %}
     this is comment
     {% endcomment %}
+
+    <h3>Include use</h3>
+    {% include "componets/form.html" %}
+
 </body>
 </html>
